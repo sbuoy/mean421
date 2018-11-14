@@ -1,0 +1,40 @@
+/********************************************************
+Additions to base style
+*********************************************************/
+.logo-lrg {
+  width: 80px;
+  border: 0px;
+}
+
+.logo-sm {
+  width: 52px;
+  border: 0px;
+}
+
+/********************
+  Boxes
+********************/
+#boxes {
+  margin-top: 20px;
+}
+
+#boxes .box {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+
+#boxes .box img {
+  width: 90px;
+}
+
+#boxes h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#boxes h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}

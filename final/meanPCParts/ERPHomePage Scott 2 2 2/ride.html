@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <title>ERP Admin Home Page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/homepage.css" rel="stylesheet">
+    <link href="css/Admin.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Ionicons/css/ionicons.min.css">
+
+    <!-- CRUD Latest compiled and minified CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="css/homepage.css" rel="stylesheet">
+
+    <!--<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="./plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="ride.html"><img src="img/ist421logo.png" width="20%" height="auto"> MEAN PC Parts</a>
+        
+        <ul class="navbar-nav px-3">
+            <div class="row">
+            <li><a class="btn btn-warning" id="signOut" href="signin.html"><i class="fa fa-lock"></i> Sign out</a></li>
+            <li><div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div></li>
+            </div>
+        </ul>
+        
+    </nav>
+    
+    <!-- Menu -->
+
+            <div class="menu menu_mm trans_300">
+                <div class="menu_container menu_mm">
+                    <div class="page_menu_content">
+                        <ul class="page_menu_nav menu_mm">
+                            <li class="page_menu_item menu_mm">
+                                <a href="ride.html">Home
+                                    <!--<i class="fa fa-angle-down"></i>--></a>
+                            </li>
+                            <li class="page_menu_item menu_mm">
+                                <a href="catalog.html">Start Shopping!
+                                    <!--<i class="fa fa-angle-down"></i>--></a>
+                            </li>
+                            <li class="page_menu_item menu_mm"><a href="contact.html">Contact
+                                    <!--<i class="fa fa-angle-down"></i>--></a></li>
+                            <li class="page_menu_item menu_mm"><a href="team.html">Team
+                                    <!--<i class="fa fa-angle-down"></i>--></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+            </div>
+
+    <div class="container-fluid" id="sideNavigation">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="ride.html">
+                                <span data-feather="home"></span>
+                                Home <span class="sr-only"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="inventory.html">
+                                <span data-feather="file"></span>
+                                Inventory
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="purchaseorder.html">
+                                <span data-feather="shopping-cart"></span>
+                                Purchase Order
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="packages.html">
+                                <span data-feather="package"></span>
+                                Packages
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="customers.html">
+                                <span data-feather="users"></span>
+                                Customers
+                            </a>
+                        </li>
+                        <!--<li class="nav-item">
+                            <a class="nav-link" href="reports.html">
+                                <span data-feather="briefcase"></span>
+                                Reports
+                            </a>
+                        </li>-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="salesorder.html">
+                                <span data-feather="layers"></span>
+                                Sales Order
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="invoices.html">
+                                <span data-feather="file-plus"></span>
+                                Invoices
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">
+                                <span data-feather="book"></span>
+                                Contacts
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="help1.html">
+                                <span data-feather="help-circle"></span>
+                                Help
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </nav>
+
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                <!-- Main Content -->
+                <section class="content">
+                    <!-- Small boxes (Stat box) -->
+                    <div class="row text-center padding">
+                        
+                        <div class="col-lg-4 col-xs-6 ">
+                            <!-- small box -->
+                            <div class="small-box bg-green">
+                                <div class="inner">
+                                    <h3>Inventory<sup style="font-size: 20px"></sup></h3>
+                                    <p>Available PC Parts figures</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-stats-bars"></i>
+                                </div>
+                                <a href="inventory.html" class="small-box-footer">Click To Go There <i class="fa fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>            
+                        
+                        <!-- ./col -->
+                        <div class="col-lg-4  col-xs-6">
+                            <!-- small box -->
+                            <div class="small-box bg-yellow">
+                                <div class="inner">
+                                    <h3>Purchase Order </h3>
+                                    <p>View update and delete PO</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-android-cart"></i>
+                                </div>
+                                <a href="purchaseorder.html" class="small-box-footer">Click To Go There <i class="fa fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- ./col -->
+                        <div class="col-lg-4  col-xs-6">
+                            <!-- small box -->
+                            <div class="small-box bg-red">
+                                <div class="inner">
+                                    <h3>Packages</h3>
+                                    <p>View Update Create and Delete Packages</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-android-checkbox-blank"></i>
+                                </div>
+                                <a href="packages.html" class="small-box-footer">Click To Go There <i class="fa fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- ./col -->
+                        <div class="col-lg-4  col-xs-6">
+                            <!-- small box -->
+                            <div class="small-box bg-blue-gradient">
+                                <div class="inner">
+                                    <h3>Customers</h3>
+                                    <p>Existing Customers</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-person-add"></i>
+                                </div>
+                                <a href="customers.html" class="small-box-footer">Click To Go There <i class="fa fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+                        <!--<div class="col-lg-3 col-xs-6">
+                            <div class="small-box bg-teal">
+                                <div class="inner">
+                                    <h3>Reports</h3>
+                                    <p>Reports </p>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-android-attach"></i>
+                                </div>
+                                <a href="reports.html" class="small-box-footer">Click To Go There <i class="fa fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>-->
+                        <div class="col-lg-4  col-xs-6">
+                            <!-- small box -->
+                            <div class="small-box bg-maroon-active">
+                                <div class="inner">
+                                    <h3>Sales Order</h3>
+                                    <p>View and Delete SO Table</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-pie-graph"></i>
+                                </div>
+                                <a href="salesorder.html" class="small-box-footer">Click To Go There <i class="fa fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- ./col -->
+                        <div class="col-lg-4  col-xs-6">
+                            <!-- small box -->
+                            <div class="small-box bg-lime">
+                                <div class="inner">
+                                    <h3>Invoices</h3>
+
+                                    <p>Customer Invoices</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-android-clipboard"></i>
+                                </div>
+                                <a href="invoices.html" class="small-box-footer">Click To Go There <i class="fa fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- ./col -->
+                        <div class="col-lg-4  col-xs-6">
+                            <!-- small box -->
+                            <div class="small-box bg-fuchsia">
+                                <div class="inner">
+                                    <h3>Contacts</h3>
+
+                                    <p>Customer information</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-android-contacts"></i>
+                                </div>
+                                <a href="contacts.html" class="small-box-footer">Click To Go There <i class="fa fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4  col-xs-6">
+                            <!-- small box -->
+                            <div class="small-box bg-gray">
+                                <div class="inner">
+                                    <h3>Help</h3>
+
+                                    <p>Help for different html tabs.</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-help"></i>
+                                </div>
+                                <a href="help1.html" class="small-box-footer">Click To Go There <i class="fa fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                        <!-- Bootstrap core JavaScript
+    ================================================== -->
+                        <!-- Placed at the end of the document so the pages load faster -->
+                        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                        <script>
+                            window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+
+                        </script>
+                        <script src="../../assets/js/vendor/popper.min.js"></script>
+                        <script src="../../dist/js/bootstrap.min.js"></script>
+
+                        <!-- Icons -->
+                        <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+                        <script>
+                            feather.replace()
+
+                        </script>
+                        <!-- jQuery CDN - Slim version (=without AJAX) -->
+                        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                        <!-- Popper.JS -->
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+                        <!-- Bootstrap JS -->
+                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+                        <script src="js/vendor/jquery-3.1.0.js"></script>
+                        <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+                        <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+                        <script src="js/config.js"></script>
+                        <script src="js/cognito-auth.js"></script>
+                        <script src="js/ride.js"></script>
+
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

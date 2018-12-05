@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <title>ERP Customers</title>
+    <!-- CRUD Latest compiled and minified CSS -->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="css/homepage.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/homepage.css" rel="stylesheet">
+    <!-- Bootstrap Date-Picker Plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+
+    <!-- Bootstrap CSS CDN -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!--<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="./plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="ride.html"><img src="img/ist421logo.png" width="20%" height="auto"> MEAN PC Parts</a>
+
+        <ul class="navbar-nav px-3">
+            <li><a class="btn btn-warning" id="signOut" href="signin.html"><i class="fa fa-lock"></i> Sign out</a></li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="ride.html">
+                                <span data-feather="home"></span>
+                                Home <span class="sr-only"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="inventory.html">
+                                <span data-feather="file"></span>
+                                Inventory
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="purchaseorder.html">
+                                <span data-feather="shopping-cart"></span>
+                                Purchase Order
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="packages.html">
+                                <span data-feather="package"></span>
+                                Packages
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="customers.html">
+                                <span data-feather="users"></span>
+                                Customers
+                            </a>
+                        </li>
+                        <!--<li class="nav-item">
+                            <a class="nav-link" href="reports.html">
+                                <span data-feather="briefcase"></span>
+                                Reports
+                            </a>
+                        </li>-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="salesorder.html">
+                                <span data-feather="layers"></span>
+                                Sales Order
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="invoices.html">
+                                <span data-feather="file-plus"></span>
+                                Invoices
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">
+                                <span data-feather="book"></span>
+                                Contacts
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="help1.html">
+                                <span data-feather="help-circle"></span>
+                                Help
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" style="padding-top:5rem;">
+                 <div class="col-md-1 ml-sm-auto col-lg-1 px-1">
+                            <a class="pagehelp" href="help1.html">
+                                <span data-feather="help-circle"></span>
+                                Help
+                            </a>
+                        </div>
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-6 mb-3 border-bottom">
+                    <h1 class="h2">Customers Information</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <!--Search box-->
+                        <input id="myInput" type="text" placeholder="Search..">
+                        <!--End search box-->
+                        <div class="btn-group mr-2">
+                            
+
+                            <!-- <form>
+                                <button class="btn btn-success" id="searchbutton"  type="button" class="btn btn-warning">Search User</button></form>
+                            <script type="text/javascript">
+                                document.getElementById("searchbutton").onclick = function() {
+                                    location.href = "#";
+                                };
+
+                            </script>-->
+
+                            <!--<button class="btn btn-primary" id="createbutton">Create User</button>
+                            <script type="text/javascript">
+                                document.getElementById("createbutton").onclick = function() {
+                                    location.href = "createcustomers.html";
+                                };
+
+                            </script>-->
+
+
+                            <ul class="nav" role="tabnav">
+                                <button class="btn btn-success" href="#view" data-toggle="tab"><i class="fa fa-eye"></i> View User</button>
+
+                                <!--<button class="btn btn-primary" href="#delete" role="tab" data-toggle="tab" aria-controls="delete">Delete</button>-->
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!--  <div class="table-responsive">
+                    <table id="Items" data-height="460" class="table table-striped table-sm">
+                        <thead>
+                            <tr>
+                                <th data-field="Email">Email</th>
+                                <th data-field="address">Address</th>
+                                <th data-field="city">City</th>
+                                <th data-field="country">Country</th>
+                                <th data-field="firstName">First Name</th>
+                                <th data-field="lastName">Last Name</th>
+                                <th data-field="phone">Phone</th>
+                                <th data-field="state">State</th>
+                                <th data-field="zip">Zip</th>
+                            </tr>
+                        </thead>
+                        <tbody id="myTable"></tbody>
+                    </table>
+                    <br>
+                </div>-->
+
+
+
+                <!--<form>
+                    <button id="viewInventory" type="button" class="btn btn-warning" >View SO Table</button>
+                </form>-->
+
+
+                <!--<div class="container">
+                     <div class="row">
+                        <div class="table-responsive">
+                           <table class="table table-striped w-auto">
+                              <thead>
+                                 <tr>
+                                    <th>#</th>
+                                    <th>Customer Id</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Street Address</th>
+                                    <th>City</th>
+                                    <th>State</th>
+                                    <th>Zip Code</th>
+                                    <th>Country</th>
+                                    <th>Email</th>
+                                    <th>Phone Number</th>
+                                    <th>Status</th>
+                                 </tr>
+                              </thead>
+                              <tbody id="searchCustomerTable"></tbody>
+                           </table>
+                        </div>
+                     </div>-->
+
+
+
+
+
+
+
+
+                <div class="table-responsive">
+                    <div class="container">
+                        <section class="shopping-cart dark">
+                            <div class="container">
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Customer Id</th>
+                                                    <th>First Name</th>
+                                                    <th>Last Name</th>
+                                                    <th>Street Address</th>
+                                                    <th>City</th>
+                                                    <th>State</th>
+                                                    <th>Zip Code</th>
+                                                    <th>Country</th>
+                                                    <th>Email</th>
+                                                    <th>Phone Number</th>
+                                                    <th>Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="customerTable"></tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <ul class="nav" role="tabnav">
+                        <button class="btn btn-warning" href="#view" data-toggle="tab"><i class="fa fa-eye"></i> View User</button>
+                    </ul>
+                   
+
+                   
+
+                        </form>
+                    </div>
+                        
+                     
+
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+
+                        <!-- Font Awesome JS -->
+                        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+                        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+                        <!-- Bootstrap JS -->
+                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+                        <script src="js/config.js"></script>
+                        <script src="js/cognito-auth.js"></script>
+                        <script src="js/ride.js"></script>
+                        <script src="js/get-salesorders.js"></script>
+                        <script src="js/search.js"></script>
+
+                        <script>
+                            window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+
+                        </script>
+                        <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+                        <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+                        <script src="js/config.js"></script>
+                        <script src="js/cognito-auth.js"></script>
+                        <script src="js/ride.js"></script>
+                        <!-- Icons -->
+                        <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+                        <script src="js/searchcust.js"></script>
+                        <script src="js/datepickmask.js"></script>
+                        <!-- bootstrap datepicker -->
+                        <script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+                        <!-- date-range-picker -->
+                        <script src="bower_components/moment/min/moment.min.js"></script>
+                        <script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+                        <!-- InputMask -->
+                        <script src="plugins/input-mask/jquery.inputmask.js"></script>
+                        <script src="plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+                        <script src="plugins/input-mask/jquery.inputmask.extensions.js"></script>
+                        <!-- Select2 -->
+                        <script src="bower_components/select2/dist/js/select2.full.min.js"></script>
+                        <!-- bootstrap datepicker -->
+                        <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+
+                        <script>
+                            feather.replace()
+
+                        </script>
+                        <script src="js/crudusers.js"></script>
+
+</body>
+
+</html>

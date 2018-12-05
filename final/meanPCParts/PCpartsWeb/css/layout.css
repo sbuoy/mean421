@@ -1,0 +1,28 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.grid-wrapper {
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: 100%;
+	grid-template-areas:
+		"header"
+		"main"
+		"footer";
+}
+
+header {
+	grid-area: header;
+}
+
+.main {
+	height: 100%;
+	grid-area: main;
+}
+
+footer {
+	grid-area: footer;
+}

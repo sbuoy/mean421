@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>ERP Help Page</title>
+    <!-- CRUD Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
+
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!--ajax jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--Popper-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <!--Bootstrap 4 JS-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!--Fontawesome-->
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+    <!--import stylesheets-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/homepage.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/homepage.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="css/homepage.css" rel="stylesheet">
+
+
+
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="ride.html"><img src="img/ist421logo.png" width="20%" height="auto"> MEAN PC Parts</a>
+
+        <ul class="navbar-nav px-3">
+            <li><a class="btn btn-warning" id="signOut" href="signin.html"><i class="fa fa-lock"></i> Sign out</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="ride.html">
+                                <span data-feather="home"></span>
+                                Home <span class="sr-only"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="inventory.html">
+                                <span data-feather="file"></span>
+                                Inventory
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="purchaseorder.html">
+                                <span data-feather="shopping-cart"></span>
+                                Purchase Order
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="packages.html">
+                                <span data-feather="package"></span>
+                                Packages
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="customers.html">
+                                <span data-feather="users"></span>
+                                Customers
+                            </a>
+                        </li>
+                        <!--<li class="nav-item">
+                            <a class="nav-link" href="reports.html">
+                                <span data-feather="briefcase"></span>
+                                Reports
+                            </a>
+                        </li>-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="salesorder.html">
+                                <span data-feather="layers"></span>
+                                Sales Order
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="invoices.html">
+                                <span data-feather="file-plus"></span>
+                                Invoices
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">
+                                <span data-feather="book"></span>
+                                Contacts
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="help1.html">
+                                <span data-feather="help-circle"></span>
+                                Help
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <div id="mySidenav" class="sidenav">
+  <a href="#" id="about">About</a>
+  <a href="#" id="blog">Blog</a>
+  <a href="#" id="projects">Projects</a>
+  <a href="#" id="contact">Contact</a>
+</div>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-6 mb-3 border-bottom">
+                    <h1 class="h2">MEAN PC Parts Help</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group mr-2">
+                        </div>
+                    </div>
+                </div>
+
+                <body>
+
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        <h3>How to Sign Up For Admin Account?</h3>
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ol>
+                                        <li>You will have to contact your employee to create account for you.</li>
+                                        <li>Provide your email address, password, first name alnd last name.</li>
+                                        <li>Once you have been registered in the database you can enter provided password.</li>
+                                        <li>Click click on Sign in to access an account.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <h3>How to verify an Admin account?</h3>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ol>
+                                        <li>To finish creating an account, an ERP user needs to confirm his or her email address.</li>
+                                        <li>A verification code will be sent to the user's email address.</li>
+                                        <li>The user has to type his/her email address and verification code to finish sign up process.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <h3>How to sign in to PC Parts Admin?</h3>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ol>
+                                        <li>A link will be provided to admin users.</li>
+                                        <li>Enter your email address in the email field.</li>
+                                        <li>Enter your password in the password field</li>
+                                        <li>Hit on Submit to login to PC Parts Admin.</li>
+                                        <li>If you forget your password, you can reset it by clicking on forgot password.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                                        <h3>How to Sign out?</h3>
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <h4>Click on Sign out button of top right corner of each page.</h4>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                                        <h3>What is MEAN PC Parts Home Page? </h3>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <h4>Inventory, Purchase Requisition, Packages, Customer, Reports, Sales Order, Invoices and Contacts module is available in the ERP home page . </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingSix">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                                        <h3>How to view Inventory?</h3>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <h4>Click on View Inventory & then you will be able to view all the inventories that there is.</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingSeven">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+                                        <h3>How to Create Inventory?</h3>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <h4>Click on View Inventory & then you will be able to see the table.</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingtweny">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsedelet" aria-expanded="false" aria-controls="collapsedelet">
+                                        <h3>How to Delete Item in Inventory?</h3>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapsedelet" class="collapse" aria-labelledby="headingtweny" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <h4>You will need to enter the right Item ID which you can get it from the table. Once typed in the field you can delete the inventroty item from the table.</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingSubm">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
+                                        <h3>How to Submit an Item in Inventory?</h3>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseEighteen" class="collapse" aria-labelledby="headingSubm" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <h4>In order to submit the item into the Inventory you will need to fill out every inputs in order to submit it.</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingso">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNull" aria-expanded="false" aria-controls="collapseNull">
+                                        <h3>How to Submit Update Item in the Inventory?</h3>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseNull" class="collapse" aria-labelledby="headingso" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <h4>In order to update the item in the Inventory table you will need to fill out every inputs in order to update it.</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-header" id="headingNine">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseThree">
+                                        <h3>What is Purchase Order?</h3>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <h4>An Admin can view and update Purchase Order.</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTen">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseThree">
+                                        <h3>What is in Packages?</h3>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <h4>An admin can view the packages by clicking Packages button.</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingEleven">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseThree">
+                                        <h3>What is in Customers Tab?</h3>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <h4>An admin can view and edit the customers information in Customer tab.</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwelve">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseThree">
+                                        <h3>What is in Sales Order Tab?</h3>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <h4>An admin can view and delete the sales order in Sales Order Tab.</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThirteen">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThree">
+                                        <h3>What is in Invoices Tab?</h3>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <h4>An admin can view and print customer's sales order confirmation </h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFourteen">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseThree">
+                                        <h3>What is in Contacts?</h3>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <h4>An admin can view the all the Project members of the PC Parts Project.</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <script>
+                        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+                    </script>
+                    <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+                    <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+                    <script src="js/config.js"></script>
+                    <script src="js/cognito-auth.js"></script>
+                    <script src="js/getcurrentuser.js"></script>
+                    <script src="js/cart.js"></script>
+                    <script src="js/sales-order.js"></script>
+
+                    <script src="js/ride.js"></script>
+                    <!-- Icons -->
+                    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+                    <script>
+                        feather.replace()
+                    </script>
+                    <script src="js/search.js"></script>
+
+                </body>
+
+</html>

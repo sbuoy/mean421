@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>ERP Create Customers</title>
+    <!-- CRUD Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/homepage.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="css/homepage.css" rel="stylesheet">
+
+    <!--<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="./plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#"><img src="img/ist421logo.png" width="20%" height="auto"> MEAN PC Parts</a>
+        <ul class="navbar-nav px-3">
+            <li><a class="btn btn-warning" id="signOut" href="signin.html"><i class="fa fa-lock"></i>
+                    Sign out</a></li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="ride.html">
+                                <span data-feather="home"></span>
+                                Home <span class="sr-only"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="inventory.html">
+                                <span data-feather="file"></span>
+                                Inventory
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="purchaseorder.html">
+                                <span data-feather="shopping-cart"></span>
+                                Purchase Order
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="packages.html">
+                                <span data-feather="package"></span>
+                                Packages
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="customers.html">
+                                <span data-feather="users"></span>
+                                Customers
+                            </a>
+                        </li>
+                        <!--<li class="nav-item">
+                            <a class="nav-link" href="reports.html">
+                                <span data-feather="briefcase"></span>
+                                Reports
+                            </a>
+                        </li>-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="salesorder.html">
+                                <span data-feather="layers"></span>
+                                Sales Order
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="invoices.html">
+                                <span data-feather="file-plus"></span>
+                                Invoices
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">
+                                <span data-feather="book"></span>
+                                Contacts
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="help1.html">
+                                <span data-feather="help-circle"></span>
+                                Help
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-6 mb-3 border-bottom">
+                    <h1 class="h2">Create a User</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group mr-2">
+
+                            <form>
+                                <button class="btn btn-success" id="viewInventory" type="button" class="btn btn-warning"><i class="fa fa-search"></i> Search User</button></form>
+
+
+                            <script type="text/javascript">
+                                document.getElementById("viewInventory").onclick = function() {
+                                    location.href = "customers.html";
+                                };
+                            </script>
+
+                            <button class="btn btn-primary" id="createbutton"><i class="fa fa-plus"></i> User</button>
+                            <script type="text/javascript">
+                                document.getElementById("createbutton").onclick = function() {
+                                    location.href = "";
+                                };
+                            </script>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <body>
+                    <main role="main" class="col-md-9 ml-sm-3 col-lg-9 px-9">
+                        <div class="container" id="main">
+                            <form id="form" action="" method="POST" enctype='application/json'>
+                                <h4>User Information</h4>
+                                <h6><a href="#" data-toggle="tooltip" data-placement="left" title="Primary email used by customer"><i class="fa fa-question"></i></a> Email:</h6>
+                                <input id="Email" type="text" name="Email" class="form-control" placeholder="*" />
+                                <h6><a href="#" data-toggle="tooltip" data-placement="left" title="Street address used by customer"><i class="fa fa-question"></i></a> Address:</h6>
+                                <input id="address" type="text" name="address" class="form-control">
+                                <h6><a href="#" data-toggle="tooltip" data-placement="left" title="City used by address"><i class="fa fa-question"></i></a> City:</h6>
+                                <input id="city" type="text" list="cityname" name="city" class="form-control" placeholder="Please Enter or Choose the City" />
+                                <datalist id="cityname">
+                                    <option value="Philadelphia">
+                                    <option value="Trenton">
+                                    <option value="Wilmington">
+                                    <option value="New York City">
+                                    <option value="Cleveland">
+                                    <option value="Austin">
+                                    <option value="Chicago">
+                                    <option value="WashingtonDC">
+                                    <option value="Miami">
+                                </datalist>
+                                <h6><a href="#" data-toggle="tooltip" data-placement="left" title="Country customer resides"><i class="fa fa-question"></i></a> Country:</h6>
+                                <input id="country" type="text" list="usercountry" name="country" class="form-control" placeholder="Please Enter or Choose a Country" />
+                                <datalist id="usercountry">
+                                    <option value="USA">
+                                    <option value="Great Brittain">
+                                    <option value="Canada">
+                                    <option value="Mexico">
+                                    <option value="Brazil">
+                                    <option value="France">
+                                    <option value="Spain">
+                                    <option value="Poland">
+                                    <option value="Italy">
+                                </datalist>
+                                <h6><a href="#" data-toggle="tooltip" data-placement="left" title="First name of new customer"><i class="fa fa-question"></i></a> First Name:</h6>
+                                <input id="firstName" type="text" name="firstName" placeholder="Please Enter your first name" class="form-control" />
+                                <h6><a href="#" data-toggle="tooltip" data-placement="left" title="Last name of new customer"><i class="fa fa-question"></i></a> Last Name:</h6>
+                                <input id="lastName" type="text" name="lastName" placeholder="Please Enter your last name" class="form-control" />
+                                <h6><a href="#" data-toggle="tooltip" data-placement="left" title="Phone number of new customer"><i class="fa fa-question"></i></a> Phone:</h6>
+                                <input id="phone" type="text" name="phone" placeholder="Please Enter your phone number" class="form-control" />
+                                <h6><a href="#" data-toggle="tooltip" data-placement="left" title="State customer resides"><i class="fa fa-question"></i></a> State:</h6>
+                                <input id="stateid" type="text" name="stateid" list="userstate" class="form-control" placeholder="Please Type or Choose Your State" />
+                                <datalist id="userstate">
+                                    <option value="PA">
+                                    <option value="GA">
+                                    <option value="FL">
+                                    <option value="NJ">
+                                    <option value="ME">
+                                    <option value="NY">
+                                    <option value="OH">
+                                    <option value="VA">
+                                    <option value="WA">
+                                </datalist>
+                                <h6><a href="#" data-toggle="tooltip" data-placement="left" title="Zip code customer resides"><i class="fa fa-question"></i></a> Zip:</h6>
+                                <input id="zip" type="text" name="zip" placeholder="Please Enter your zip number" class="form-control" />
+                                <br />
+                                <br>
+
+                                <button id="submit" type="button" name="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Submit</button>
+
+                                <button id="deleteInventory" type="button" class="btn btn-danger"><i class="fa fa-trash"></i> Delete Customer</button>
+                                <br>
+                                <br>
+
+                            </form>
+                        </div>
+                    </main>
+
+
+                    <script>
+                        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+                    </script>
+
+                    <!-- Icons -->
+                    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+                    <script>
+                        feather.replace()
+                    </script>
+                    <script src="js/CRUD/customers.js"></script>
+
+                </body>
+
+</html>

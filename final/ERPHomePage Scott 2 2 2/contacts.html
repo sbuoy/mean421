@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+    <title>ERP Admin Page</title>
+    <!-- CRUD Latest compiled and minified CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css">
+   
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/homepage.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="css/homepage.css" rel="stylesheet">
+    
+    <!--<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="./plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="ride.html"><img src="img/ist421logo.png" width="20%" height="auto"> MEAN PC Parts</a>
+        <ul class="navbar-nav px-3">
+            <li><a class="btn btn-warning" id="signOut" href="signin.html"><i class="fa fa-lock"></i> Sign out</a></li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="ride.html">
+                                <span data-feather="home"></span>
+                                Home <span class="sr-only"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="inventory.html">
+                                <span data-feather="file"></span>
+                                Inventory
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="purchaseorder.html">
+                                <span data-feather="shopping-cart"></span>
+                                Purchase Order
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="packages.html">
+                                <span data-feather="package"></span>
+                                Packages
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="customers.html">
+                                <span data-feather="users"></span>
+                                Customers
+                            </a>
+                        </li>
+                        <!--<li class="nav-item">
+                            <a class="nav-link" href="reports.html">
+                                <span data-feather="briefcase"></span>
+                                Reports
+                            </a>
+                        </li>-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="salesorder.html">
+                                <span data-feather="layers"></span>
+                                Sales Order
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="invoices.html">
+                                <span data-feather="file-plus"></span>
+                                Invoices
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacts.html">
+                                <span data-feather="book"></span>
+                                Contacts
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="help1.html">
+                                <span data-feather="help-circle"></span>
+                                Help
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                <br>
+                <h3>Project Supervisors</h3>
+                <div class="row">
+                    
+                    <div class="column">
+                        <div class="card">
+                            <img src="img/team/blank.png" alt="Taghi" style="width:100%">
+                            <div class="container">
+                                <h2>Taghi Ozbeki</h2>
+                                <p class="title">IST 421 Professor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3>Team 3D Printing</h3>
+                <div class="row">
+                    <div class="column">
+                        <div class="card">
+                            <img src="img/team/image1.png" alt="Scott" style="width:100%">
+                            <div class="container">
+                                <h2>Scott Bui</h2>
+                                <p class="title">Team Leader</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card">
+                            <img src="img/team/image2.png" alt="Subin" style="width:100%;">
+                            <div class="container">
+                                <h2>Chan Morn</h2>
+                                <p class="title">Lead Designer/
+                                    Frontend</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card">
+                            <img src="img/team/image3.png" alt="Anthony" style="width:100%">
+                            <div class="container">
+                                <h2>Anthony Le</h2>
+                                <p class="title">Lead Developer</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card">
+                            <img src="img/team/image4.png" alt="Oleh" style="width:100%">
+                            <div class="container">
+                                <h2>Harshit Patel</h2>
+                                <p class="title">Backend Developer</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card">
+                            <img src="img/team/image5.png" alt="Krina" style="width:100%">
+                            <div class="container">
+                                <h2>Krishna Talluri</h2>
+                                <p class="title">Backend Developer</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card">
+                            <img src="img/team/image6.png" alt="Soeb" style="width:100%">
+                            <div class="container">
+                                <h2>Abu Chowdhury</h2>
+                                <p class="title">Backend Developer</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+
+    </script>
+    <script src="js/vendor/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+    <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/cognito-auth.js"></script>
+    <script src="js/ride.js"></script>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+        feather.replace()
+
+    </script>
+
+</body>
+
+</html>

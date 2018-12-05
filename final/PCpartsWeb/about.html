@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mean PC Parts | About</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/style-add.css" rel="stylesheet">
+  <link href="./css/layout.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--
+    ***************************************************************************************************
+                                                Header
+    ***************************************************************************************************
+  -->
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" role="navigation">
+      <div class="container">
+       <a class="navbar-brand" href="index.html"><img class="logo-lrg" src="img/logo.png"></a>
+
+       <button class="navbar-toggler" type="button" data-toggle="collapse"
+       data-target="#exCollapsingNavbar">
+       <span class="navbar-toggler-icon"></span>
+
+     </button>
+     <div class="collapse navbar-collapse" id="exCollapsingNavbar">
+      <ul class="nav navbar-nav">
+        <li class="nav-item"><a href="shop.html" class="nav-link">Shop</a></li>
+       
+        <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+        <li class="nav-item"><a href="help.html" class="nav-link">Help</a></li>
+      </ul>
+      <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+        <li class="dropdown order-1">
+          <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle">My Account <span class="caret"></span></button>
+
+          <ul class="dropdown-menu dropdown-menu-right mt-2">
+           <p id="signout"></p>
+           <li class="px-3 py-2">
+             <form id="signinForm" class="form" role="form">
+              <div class="form-group">
+                <input id="emailInput" placeholder="Email" class="form-control form-control-sm" type="text" required="">
+              </div>
+              <div class="form-group">
+                <input id="passwordInput" placeholder="Password" class="form-control form-control-sm" type="password" required="">
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+              </div>
+              <div id="signUp" class="margin-top text-center">Don't have an account? <a href="register.html">Create One</a>
+              </div>
+
+              <div class="form-group text-center">
+                <small><a id="forgotPassword" href="forgetpassword.html" data-toggle="modal" data-target="#modalPassword">Forgot password?</a></small>
+              </div>
+            </form>
+          </li>
+        </ul>
+      </li>
+
+      <li class="dropdown order-1">
+        <a id="cart-display" class="btn btn-outline-secondary" href="cart.html">Cart</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+<div id="modalPassword" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Forgot password</h3>
+        <button type="button" class="close font-weight-light" data-dismiss="modal" aria-hidden="true">×</button>
+      </div>
+      <div class="modal-body">
+        <p>Enter Email Address</p>
+        <input id="emailReset" class="form-control form-control-sm" type="text" required="">
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        <button class="btn btn-primary" onclick="forgotpasswordbutton();">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+<!--
+  ***************************************************************************************************
+                                                Main
+  ***************************************************************************************************
+-->
+    
+<!--- Meet the team -->
+<div class="container-fluid padding">
+  <div class="row welcome text-center">
+    <div class="col-12">
+      <h1 class="display-4"> Meet the Team</h1>
+    </div>
+    <hr>
+  </div>
+</div>
+
+<!--- Cards -->
+<div class="container-fluid padding ">
+  <div class="d-flex justify-content-center">
+    <div class="col-md-9">
+      <div class="card">
+        <img class="card-img-top" src="img/team7.png">
+        <div class="card-body">
+          <h4 class="card-title text-center">Mean PC Parts </h4>
+          <p class="card-text text-center">Our team believes in quality products.</p>
+          
+
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+
+<div class="container-fluid padding">
+  <div class="row text-center padding">
+   <div class="col-xs-12 col-sm-6 col-md-4">
+    <img src="img/creativity.png">
+    <h3>Quality Products</h3>
+    <p> We believe we have the best products in the business  </p>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <img src="img/world.png">
+    <h3>Worldwide</h3>
+    <p> We ship wordlwide. </p>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <img src="img/unique.png">
+    <h3>Customer Satisfaction</h3>
+    <p> We offer super service to meet our customers needs.</p>
+  </div>
+</div> 
+<hr class="my-4">
+</div>   
+<!--
+<section class ="main">
+    <h1 class="page-title">About Us</h1>
+    <p>The Mean PC Parts team has gathered together to built a working site. T Using our lessons from school we've built a site that fufills all that the customers and employers will need while still retaining its fexibility to grow larger if need be. It started with building a site and then having it store data valueables and accounts, with those done all we needed was to build the site around them. sooon we expanded into building the other pages. Along the way we had to solve issues with minor things such as the lost password function and getting the propper feedback from the variosu tools. but we persevered and built a site we can be proud of. </p>
+    <p>With this site we made it so one can order various products like stickers, decals, or small messages that can be places where-ever one wishes to. these proffesionally cut designs will look impressive and project a feeling of professional reliability. the site is also the best it can get in terms of like-ability as it is fast and streamlined in termsof use and check out. afterall nobody wants to be stuck searching a site for what you want. </p>
+
+    <h1 class="page-title">What We Do</h1>
+    <p>We are working to make a site that allows one to request a Mean PC Parts to there specifications and desires with ease. Between us our goal is to make sure
+that the site functions ins a way that is fast efficient and convenient for customers to want to come back and reorder from again. The site here is simple enough for anyone to use and allows one to get in and out as fast as they need. </p>
+</section>
+-->
+<!-- Page Content -->
+    <div class="container">
+
+      <!-- Introduction Row -->
+      <h1 class="my-4">About Us
+        <small>It's Nice to Meet You!</small>
+      </h1>
+      <p style="text-align: justify;">The Mean PC Parts team has gathered together to built a working site. Using our lessons from school we've built a site that fulfills all that the customers and employers will need while still retaining its flexibility to grow larger if need be. It started with building a site and then having it store data valuables and accounts, with those done all we needed was to build the site around them. Soon we expanded into building the other pages. Along the way, we had to solve issues with minor things such as the lost password function and getting the proper feedback from the various tools. We persevered and built a site we can be proud of.
+
+       </p>
+        <p style="text-align: justify;">
+
+        With this site, we made it so one can order various products like pc parts. The site is also the best it can get in terms of like-ability as it is fast and streamlined in terms of use and check out. After all, nobody wants to be stuck searching a site for what you want.</p>
+
+      <!-- Team Members Row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="my-4">Our Team</h2>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="img/member0.png" height="200" width="200" alt="">
+          <h3>Scott Bui
+            <small>Team Lead</small>
+          </h3>
+          <p>Project Manager</p>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="img/team1.png" height="200" width="200"alt="">
+          <h3>Chan Morn
+            <small>UI/UX Developer</small>
+          </h3>
+          <p>Responsible for interactions between the customer and the firm's digital presence</p>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="img/member4.png" height="175" width="190" alt="">
+          <h3>Anthony Le
+            <small>Lead Developer</small>
+          </h3>
+          <p>Responsible for MEAN Stack development (Express, Angular, Node)</p>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="img/member3.png" height="195" width="188" alt="">
+          <h3>Harshit Patel
+            <small>Backend Developer</small>
+          </h3>
+          <p>Database</p>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="img/member1.png" height="195" width="188"alt="">
+          <h3>Krishna Talluri
+            <small>Backend Developer</small>
+          </h3>
+          <p>Database</p>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="img/member2.png" height="195" width="188" alt="">
+          <h3>Abu Chowdhury
+            <small>Backend Developer</small>
+          </h3>
+          <p>Database</p>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+<!--
+
+  ***************************************************************************************************
+                                                Footer
+  ***************************************************************************************************
+-->
+<footer class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <hr class="light">
+                <h5>Let Us Help</h5>
+                <hr class="light">
+                 <ul class="list-unstyled">
+                <li> <a  href="account.html">My Account</a></li>
+                <li> <a  href="about.html">About Us</a></li>
+                <li> <a  href="help.html">Help</a></li>
+                <li> <a  href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <hr class="light">
+                <h5>Business Hours</h5>
+                <hr class="light">
+                 <ul class="list-unstyled">
+                <p>Monday-Friday: 9am - 5pm</p>
+                <p>Saturday: 10am - 4pm</p>
+                <p>Sunday: closed</p>
+                
+                </ul>
+            </div>
+
+
+           
+            <div class="col-md-4">
+                <hr class="light">
+                <h5>Sponsored By</h5>
+                <hr class="light">
+                <ul class="list-unstyled">
+                <li> <a  href="">Penn State Abington</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12">
+                <hr class="light-100">
+                <h5>&copy; Copyright 2018 Mean PC Parts Inc, All Rights Reserved</h5>
+            </div>
+        </div>
+</footer>
+
+
+<script src="js/vendor/aws-cognito-sdk.min.js"></script>
+<script src="js/vendor/amazon-cognito-identity.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/cognito-auth.js"></script>
+<script src="js/getcurrentuser.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>
